@@ -1,0 +1,301 @@
+/* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+:root{
+    /* Text colors */
+    --primary-tcolor: #131313;
+    --secondary-tcolor:#424242;
+    --third-tcolor: #727272;
+    /* Bacground colors */
+    --button-bgcolor: #FF900E;
+}
+*{
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-tcolor);
+    line-height: 26px;
+}
+
+/* Header Design */
+header{
+    padding: 30px 0px;
+    background: rgba(255, 144, 14, 0.1);
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+}
+.nav_list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.logo a{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-tcolor);
+    text-decoration: none;
+    transition:1s ;
+}
+.logo:hover a{
+    font-size: 42px;
+    color: var(--secondary-tcolor);
+}
+.nav_list li{
+    padding-left: 30px;
+
+}
+.nav_list li:hover a{
+    padding-left: 30px;
+    color: var(--primary-tcolor);
+}
+.nav_list a{
+    text-decoration: none;
+    color: var(--secondary-tcolor);
+    font-size: 18px;
+    font-weight: 500;
+    transition:1s ;
+}
+.fa-solid, .fas {
+    font-weight: 800;
+    color: var(--primary-tcolor);
+    padding-left: 10px;
+} 
+/* Main section start &*/
+
+/* Banner seciton */
+.banner{
+    margin-bottom: 100px;
+    background: rgba(255, 144, 14, 0.1);
+}
+.banner_details {
+    display: grid;
+    margin: 0px 150px;
+    text-align: center;
+    justify-items: center;
+}
+.banner_title{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--primary-tcolor);
+    line-height: 75px;
+    margin-top: 50px;
+}
+.banner_description{
+    width: 862px;
+    margin-top: 17px;
+}
+.banner_button{
+    background: var(--button-bgcolor);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 25px 0px;
+}
+.banner_button a{
+    text-decoration: none;
+    color: #fff;
+}
+.banner_image{
+    max-width: 100%;
+}
+
+/* Feature Section */
+.feature_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 0px 150px;
+    align-items: center;
+}
+.feature_images_box{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.feature_image{
+    width: 100%;
+}
+.feature_details_title{
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.feature_title_span{
+    font-weight: 500;
+    color: var(--third-tcolor);
+}
+.feature_title_span2{
+    color: #FF900E;
+}
+
+.feature_details_description{
+    margin-top: 24px;
+}
+.feature_details_button{
+    margin-top: 32px;
+    background: var(--button-bgcolor);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 25px 0px;
+}
+.feature_details_button a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+} 
+/* Services */
+.service_container{
+    display: flex;
+    margin: 100px 150px 0px 150px;
+    gap: 40px;
+}
+.service_info{
+    width: 586px;
+}
+.service_title{
+    width: 468px;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-tcolor);
+    line-height: 53px;
+    margin-bottom: 20px;
+}
+.service_list{
+    padding: 10px 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.158);
+    border-radius: 8px;
+    margin-top: 30px;
+    
+}
+.service_list_title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+.service_list_description{
+    margin-top: 10px;
+}
+.service_thumbnail{
+    width: 708px;
+    height: ;
+}  
+
+.service_thumbnail_image{
+    background-image: url(./images/architect.png);
+    margin-left: 20px;
+    background-size: cover;
+    height: 100%;
+}
+
+.service_button{
+    position: relative;
+    background: var(--button-bgcolor);
+    border: none;
+    padding: 30px 25px;
+    border-radius: 5px;
+    left: 0;
+    bottom: 100px;
+}
+.service_button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.service_button-span{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* Facts */
+.facts{
+    margin: 100px 150px 0px 150px;
+}
+.facts_title{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-tcolor);
+}
+.facts_description{
+    width: 540px;
+    margin-top: 20px;
+}
+.all_experiences{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.experience{
+    text-align: center;
+    padding: 25px;
+    border: 1px solid var(--button-bgcolor);
+    border-radius: 5px;
+}
+.fa-solid{
+    color: var(--button-bgcolor);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.experience_number{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--secondary-tcolor);
+} 
+ /* Sponspors */
+
+.sponspors{
+    margin: 100px 150px 0px 150px;
+}
+.sponspors_info{
+    display: grid;
+    justify-items: center;
+}
+.sponspors_title{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-tcolor);
+}
+.sponspors_description{
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+}
+.sponspors_logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 50px;
+} 
+.sponsor_image{
+    max-width: 100px;
+} 
+/* Footer */
+.copyright{
+    margin: 70px 150px 0px 150px;
+    background: #FFF4E7;
+    padding: 20px;
+
+}
+.copyright_description{
+    text-align: center;
+}
+
+
+
+/* Responsive style */
+/* Small Device or Mobile */
+
+
+
+
+
+/* Medium Device or Tablet */
